@@ -1,16 +1,34 @@
-<!DOCTYPE html>
 
 <html>
-
 <head>
 	<link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	
+	<input placeholder="name" id="item-name-input" type="text" aria-label="Item Name"/>
+	<br/>
+	<input placeholder="price" id="item-price-input" type="number" aria-label="Item Price"/>
+	<button id="add" aria-role="button">Add</button>
+	<br/>
 
+	
+	<table aria-role="table" border="1">
+		<thead aria-role="rowgroup">
+			<tr aria-role="row">
+				<th id="item" aria-role="columnheader">Item</th>
+				<th id="price" aria-role="columnheader">Price</th>
+			</tr>
+		</thead>
+
+		<tbody id="list-body" aria-role="rowgroup">
+			
+		</tbody>
+	</table>
+
+	
+	<h3 id="total" aria-role="contentinfo">0</h3>
+
+	<script src="./script.js"></script>
 </body>
-
 </html>
